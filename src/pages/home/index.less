@@ -1,3 +1,37 @@
-.text {
-  font-size: 1rem;
+.conBox {
+  background-color: white;
+  padding: 15px 18px;
+  height: 50vh;
+
+  .title {
+    display: flex;
+    align-items: center;
+
+    .icon {
+      width: 5px;
+      height: 24px;
+      background: #70a29f;
+      margin-right: 10px;
+    }
+    > span {
+      font-size: 2.4rem;
+      font-family: Microsoft YaHei;
+      font-weight: 400;
+      color: #333333;
+    }
+  }
+  .imgListBox {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    .showImg {
+      width: 330px;
+      height: 168px;
+      cursor: pointer;
+    }
+    .showImg:hover {
+      width: 335px;
+      height: 170px;
+    }
+  }
 }

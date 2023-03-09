@@ -1,9 +1,6 @@
 .box {
-  position: fixed;
-  bottom: 0;
   background-color: #3881f3;
   width: 100%;
-
   .boxItem {
     width: 90rem;
     margin: auto;
@@ -62,11 +59,32 @@
       font-size: 1rem;
       margin-top: 10px;
       justify-content: center;
+      position: relative;
       .textBox {
         margin-right: 20px;
         img {
           width: 16px;
           margin-right: 10px;
+        }
+      }
+      .bigImgBox {
+        position: absolute;
+        bottom: -7px;
+        right: -125px;
+        .bigImg1 {
+          margin-left: 20px;
+          width: 28px;
+          height: 39px;
+        }
+        .bigImg2 {
+          margin-left: 20px;
+          width: 100px;
+          height: 39px;
+        }
+        .bigImg3 {
+          margin-left: 20px;
+          width: 100px;
+          height: 39px;
         }
       }
     }
@@ -80,26 +98,6 @@
       > div {
         margin-left: 15px;
       }
-    }
-  }
-  .bigImgBox {
-    position: absolute;
-    bottom: 30px;
-    right: 100px;
-    .bigImg1 {
-      margin-left: 20px;
-      width: 28px;
-      height: 39px;
-    }
-    .bigImg2 {
-      margin-left: 20px;
-      width: 100px;
-      height: 39px;
-    }
-    .bigImg3 {
-      margin-left: 20px;
-      width: 100px;
-      height: 39px;
     }
   }
 }

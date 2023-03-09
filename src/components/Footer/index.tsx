@@ -88,6 +88,11 @@ const Footer = () => {
             <img src={guowei} alt="" />
             <span>浙公网安备：33010602004556</span>
           </div>
+          <div className={styles.bigImgBox}>
+            <img className={styles.bigImg1} src={red} alt="" />
+            <img className={styles.bigImg2} src={jiucuo} alt="" />
+            <img className={styles.bigImg3} src={oldhua} alt="" />
+          </div>
         </div>
         <div className={styles.threeLine}>
           <div>中文域名：浙江政务服务政务</div>
@@ -95,11 +100,6 @@ const Footer = () => {
           <div>建议使用1366*768</div>
           <div>分辨率/IE9.0或以上浏览器访问达到最佳效果</div>
         </div>
-      </div>
-      <div className={styles.bigImgBox}>
-        <img className={styles.bigImg1} src={red} alt="" />
-        <img className={styles.bigImg2} src={jiucuo} alt="" />
-        <img className={styles.bigImg3} src={oldhua} alt="" />
       </div>
     </div>
   );
