@@ -7,6 +7,7 @@ import gdbm from "@/assets/xsq/gdbm.png";
 import hdbd from "@/assets/xsq/hdbd.png";
 import hdjy from "@/assets/xsq/hdjy.png";
 import hdsq from "@/assets/xsq/hdsq.png";
+import { history } from "umi";
 const Xsq = () => {
   const columns = [
     {
@@ -26,7 +27,16 @@ const Xsq = () => {
     {
       title: "操作",
       key: "操作",
-      render: () => <Button className={styles.btn}>前往</Button>,
+      render: () => (
+        <Button
+          onClick={() => {
+            history.push("/tableList");
+          }}
+          className={styles.btn}
+        >
+          前往
+        </Button>
+      ),
     },
   ];
   const data = [
