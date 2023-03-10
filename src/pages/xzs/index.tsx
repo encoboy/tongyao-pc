@@ -5,6 +5,8 @@ import styles from "./index.less";
 import { useState } from "react";
 import zhCN from "antd/es/locale/zh_CN";
 import { history } from "umi";
+import tongYao from "@/assets/tongyao.png";
+import yy from "@/assets/xinshow/yy.png";
 const Xzs = () => {
   const [btnIndex, setBtnIndex] = useState(0);
   const optionsTyList = [
@@ -79,20 +81,28 @@ const Xzs = () => {
               })}
             </div>
             <div className={styles.dataListBox}>
-              {Array.of(1, 2, 3, 4).map((item, index) => {
-                return (
-                  <div
-                    className={styles.dataItem}
-                    key={index}
-                    onClick={() => {
-                      history.push("/audioDetail");
-                    }}
-                  >
-                    <div className={styles.dataImg}></div>
-                    <div className={styles.dataTitle}>阿娒驮头梳（蛮话）</div>
-                  </div>
-                );
-              })}
+              {Array.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12).map(
+                (item, index) => {
+                  return (
+                    <div
+                      className={styles.dataItem}
+                      key={index}
+                      onClick={() => {
+                        history.push("/audioDetail");
+                      }}
+                    >
+                      <div className={styles.dataImg}>
+                        <img src={tongYao} alt="" />
+                        <div className={styles.iconBox}>
+                          <img src={yy} alt="" />
+                          <span>音频</span>
+                        </div>
+                      </div>
+                      <div className={styles.dataTitle}>阿娒驮头梳（蛮话）</div>
+                    </div>
+                  );
+                }
+              )}
             </div>
             <div className={styles.paginBox}>
               <ConfigProvider locale={zhCN}>

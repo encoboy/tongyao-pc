@@ -8,9 +8,9 @@ const TableList = () => {
   const columns = [
     {
       title: "活动标题",
-      dataIndex: "name",
-      key: "name",
-      render: (text: any) => <a>{text}</a>,
+      dataIndex: "text",
+      key: "text",
+      render: (text: any) => <div>{text}</div>,
     },
     {
       title: "发布时间",
@@ -21,18 +21,33 @@ const TableList = () => {
   const data = [
     {
       key: "1",
-      name: "John Brown",
-      time: "2022-10-12",
+      text: "我是小小讲解员”培训活动",
+      time: "2022-10-12 09:02:01",
     },
     {
       key: "2",
-      name: "Jim Green",
-      time: "2022-10-12",
+      text: "我是小小讲解员”培训活动",
+      time: "2022-10-12 09:02:01",
     },
     {
       key: "3",
-      name: "Joe Black",
-      time: "2022-10-12",
+      text: "我是小小讲解员”培训活动",
+      time: "2022-10-12 09:02:01",
+    },
+    {
+      key: "4",
+      text: "我是小小讲解员”培训活动",
+      time: "2022-10-12 09:02:01",
+    },
+    {
+      key: "5",
+      text: "我是小小讲解员”培训活动",
+      time: "2022-10-12 09:02:01",
+    },
+    {
+      key: "6",
+      text: "我是小小讲解员”培训活动",
+      time: "2022-10-12 09:02:01",
     },
   ];
 
@@ -53,6 +68,10 @@ const TableList = () => {
           className={styles.table}
           columns={columns}
           dataSource={data}
+          rowClassName={(record, index) => {
+            let isHui = index % 2 == 0;
+            return isHui ? styles.row_hui : "";
+          }}
         />
         <ConfigProvider locale={zhCN}>
           <Pagination

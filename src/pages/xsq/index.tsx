@@ -2,7 +2,6 @@ import PageContain from "@/components/PageContain";
 import OldManBtn from "@/components/OldManBtn";
 import { Table, Tag, Button } from "antd";
 import styles from "./index.less";
-import { useState } from "react";
 import gdbm from "@/assets/xsq/gdbm.png";
 import hdbd from "@/assets/xsq/hdbd.png";
 import hdjy from "@/assets/xsq/hdjy.png";

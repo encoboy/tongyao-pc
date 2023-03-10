@@ -2,6 +2,8 @@ import PageContain from "@/components/PageContain";
 import OldManBtn from "@/components/OldManBtn";
 import styles from "./index.less";
 import yy from "@/assets/xinshow/yy.png";
+import tongyao from "@/assets/tongyao.png";
+import bf from "@/assets/xinshow/bf.png";
 
 const AudioDetail = () => {
   return (
@@ -9,7 +11,14 @@ const AudioDetail = () => {
       <OldManBtn isShowBackBtn={true} />
       <div className={styles.box}>
         <div className={styles.audioBox}>
-          <div className={styles.audio}>音频</div>
+          <div className={styles.audio}>
+            <img className={styles.fengm} src={tongyao} alt="" />
+            <div className={styles.iconBox}>
+              <img src={yy} alt="" />
+              <span>音频</span>
+            </div>
+            <img className={styles.stopBtn} src={bf} alt="" />
+          </div>
           <div className={styles.detail}>
             <div className={styles.title}>天呜呜（闽南语）</div>
             <div className={styles.type}>方言分类：闽南语</div>

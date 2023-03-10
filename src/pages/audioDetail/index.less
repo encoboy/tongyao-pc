@@ -8,7 +8,37 @@
     .audio {
       width: 550px;
       height: 293px;
-      background: #50736f;
+      position: relative;
+      .fengm {
+        width: 550px;
+        height: 293px;
+      }
+      .iconBox {
+        width: 80px;
+        height: 40px;
+        background-color: #698f8d;
+        position: absolute;
+        top: 0;
+        display: flex;
+        align-items: center;
+        padding-left: 5px;
+        > img {
+          margin-right: 8px;
+        }
+        > span {
+          font-size: 1.6rem;
+          font-family: Microsoft YaHei;
+          font-weight: 400;
+          color: white;
+        }
+      }
+      .stopBtn {
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        right: 225px;
+        top: 116px;
+      }
     }
     .detail {
       margin-left: 30px;
