@@ -6,7 +6,11 @@ import xsq from "@/assets/home/xsq.png";
 import xzs from "@/assets/home/xzs.png";
 import { history } from "umi";
 export default function HomePage() {
-  const ListImg = [xzs, xsq, xcz];
+  const ListImg = [
+    { img: xzs, url: "/xzs" },
+    { img: xsq, url: "/xsq" },
+    { img: xcz, url: "/xcz" },
+  ];
   return (
     <PageContain>
       <OldManBtn />
@@ -20,11 +24,11 @@ export default function HomePage() {
             return (
               <img
                 onClick={() => {
-                  history.push("/xzs");
+                  history.push(item.url);
                 }}
                 className={styles.showImg}
                 key={index}
-                src={item}
+                src={item.img}
               />
             );
           })}
