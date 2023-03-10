@@ -4,6 +4,7 @@ import { Checkbox, Col, Row, Pagination, ConfigProvider } from "antd";
 import styles from "./index.less";
 import { useState } from "react";
 import zhCN from "antd/es/locale/zh_CN";
+import { history } from "umi";
 const Xzs = () => {
   const [btnIndex, setBtnIndex] = useState(0);
   const optionsTyList = [
@@ -80,7 +81,13 @@ const Xzs = () => {
             <div className={styles.dataListBox}>
               {Array.of(1, 2, 3, 4).map((item, index) => {
                 return (
-                  <div className={styles.dataItem} key={index}>
+                  <div
+                    className={styles.dataItem}
+                    key={index}
+                    onClick={() => {
+                      history.push("/audioDetail");
+                    }}
+                  >
                     <div className={styles.dataImg}></div>
                     <div className={styles.dataTitle}>阿娒驮头梳（蛮话）</div>
                   </div>
