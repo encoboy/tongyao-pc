@@ -81,28 +81,26 @@ const Xzs = () => {
               })}
             </div>
             <div className={styles.dataListBox}>
-              {Array.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12).map(
-                (item, index) => {
-                  return (
-                    <div
-                      className={styles.dataItem}
-                      key={index}
-                      onClick={() => {
-                        history.push("/audioDetail");
-                      }}
-                    >
-                      <div className={styles.dataImg}>
-                        <img src={tongYao} alt="" />
-                        <div className={styles.iconBox}>
-                          <img src={yy} alt="" />
-                          <span>音频</span>
-                        </div>
+              {Array.of(1, 2, 3, 4, 5, 6, 7, 8).map((item, index) => {
+                return (
+                  <div
+                    className={styles.dataItem}
+                    key={index}
+                    onClick={() => {
+                      history.push("/audioDetail");
+                    }}
+                  >
+                    <div className={styles.dataImg}>
+                      <img src={tongYao} alt="" />
+                      <div className={styles.iconBox}>
+                        <img src={yy} alt="" />
+                        <span>音频</span>
                       </div>
-                      <div className={styles.dataTitle}>阿娒驮头梳（蛮话）</div>
                     </div>
-                  );
-                }
-              )}
+                    <div className={styles.dataTitle}>阿娒驮头梳（蛮话）</div>
+                  </div>
+                );
+              })}
             </div>
             <div className={styles.paginBox}>
               <ConfigProvider locale={zhCN}>
