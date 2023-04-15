@@ -1,9 +1,10 @@
 import PageContain from "@/components/PageContain";
 import OldManBtn from "@/components/OldManBtn";
 import { Checkbox, Col, Row, Pagination, ConfigProvider } from "antd";
+import zhCN from "antd/es/locale/zh_CN";
 import styles from "./index.less";
 import { useState } from "react";
-import zhCN from "antd/es/locale/zh_CN";
+
 import { history } from "umi";
 import tongYao from "@/assets/tongyao.png";
 import yy from "@/assets/xinshow/yy.png";
